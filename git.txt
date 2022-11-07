@@ -2,4 +2,65 @@ Exercice 1
 
 2/ Le répertoire .git a été crée.
 
+4/ git status
+Sur la branche master
+
+Aucun commit
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+	git.txt
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)
+
+-- git.txt est affiché en rouge
+
+5/ git add git.txt
+
+git status
+Sur la branche master
+
+Aucun commit
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+	nouveau fichier : git.txt
+
+-- git.txt est affiché en vert
+
+7/ git commit -m"Un superMessage"
+[master (commit racine) 967e9c5] Un superMessage
+ 1 file changed, 5 insertions(+)
+ create mode 100644 git.txt
+
+git status
+Sur la branche master
+rien à valider, la copie de travail est propre
+
+8/ git log -p
+commit 967e9c5edb54529780482cd9301daeb882190f08 (HEAD -> master)
+Author: victorellev <victor.zheng@etu.sorbonne-universite.fr>
+Date:   Mon Nov 7 14:30:26 2022 +0100
+
+    Un superMessage
+
+diff --git a/git.txt b/git.txt
+new file mode 100644
+index 0000000..a3793c1
+--- /dev/null
++++ b/git.txt
+@@ -0,0 +1,5 @@
++Exercice 1
++
++2/ Le répertoire .git a été crée.
++
++
+
+-- git loh -p affiche l'historique des commits et les modifications.
+
+11/ Dans le dépôt sur le serveur githubn on voir le fichier git.txt
+
+
+
+
 
