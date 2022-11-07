@@ -1,0 +1,5 @@
+Exercice 1
+
+2/ Le répertoire .git a été crée.
+
+
